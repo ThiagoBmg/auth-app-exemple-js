@@ -1,0 +1,8 @@
+Este projeto é um exemplo de como realizar a autenticação de um usuário utilizando uma API.
+
+Para iniciar o projeto digite: 
+
+- npm install 
+- npm run start
+
+Acesso o projeto em http://localhost:3000
