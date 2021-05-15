@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icons8_happy_2.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/login.css">
-    <title>Document</title>
+    <title>Lab 12 Desenvolvimento Web</title>
 </head>
 <body>
     <div id="container">
@@ -16,16 +18,13 @@
             </div>
 
             <div id="cardForm">
-                <form method="POST" action="/auth">
+                <form method="get" action="/auth" enctype="application/x-www-form-urlencoded">
                     <label for="username">USUÁRIO</label>
-                    <input id="username" type="text">
-
+                    <input id="username" name="username" type="text" required>
                     <label for="password">SENHA</label>
-                    <input id="password" type="password">
-
-                    <button type="submit">ENTRAR</button>
-
-                    <a href="#">Realizar cadastro</a>
+                    <input id="password" name="password" type="password" required>
+                    <input id="button" value="ENTRAR" type="submit">
+                    <a href="http://localhost:3000/cadastra">Realizar cadastro</a>
                 </form>
             </div>
         </div>

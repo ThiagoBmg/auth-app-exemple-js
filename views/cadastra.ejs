@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
-    <title>Cadastro novo usuário</title>
+    <link rel="stylesheet" href="./styles/cadastro.css">
+    <link rel="shortcut icon" href="./img/icons8_happy_2.ico" type="image/x-icon">
+    <title>Lab 12 Desenvolvimento Web</title>
 </head>
 <body>
-    <div class="container">
-        
+    <div id="container">
+        <div id="card">
+            <div id="cardTitle">
+                <h1>Cadastro<br>
+                de Novos Usuários</h1>
+            </div>
+
+            <div id="cardForm">
+                <form  method="get" action="/cad-new-user" enctype="application/x-www-form-urlencoded">
+                    <label for="username">USUÁRIO</label>
+                    <input id="username" name="username" type="text" required>
+                    <label for="password">SENHA</label>
+                    <input id="password" name="password" type="password" required> 
+                    <input id="button" value="ENTRAR" type="submit">
+                </form>
+            </div>
+        </div>
     </div>
+
+    <script>
+        const username= document.querySelector('#username').innerHTML;
+        const password= document.querySelector('#password').innerHTML;
+        
+    </script>
 </body>
 </html>
