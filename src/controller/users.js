@@ -28,7 +28,7 @@ module.exports = {
     login(req,res){
         var user = req.query.user || null;
         var pass = req.query.password || null;
-        if(!auth(user,pass)) return res.status(400).send({error:'not autenticated'});
+        if(!auth(user,pass)) return res.status(400).render('ops');
         return res.status(200).send({status:'autenticated'});
     }
 };
