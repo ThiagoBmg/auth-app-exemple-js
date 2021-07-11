@@ -8,6 +8,4 @@ app.set('view engine','ejs');
 app.use(require('./src/routes/views'));
 app.use(require('./src/routes/users'));
 
-app.listen(3000, ()=>{ // iniciando servidor 
-    console.log('Servidor rodando na porta 3000')
-});
+app.listen(3000, ()=> console.log('Servidor rodando na porta 3000'));
